@@ -21,7 +21,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
   return (
     <main className="market-app market-app--detail">
       <header className="market-topbar market-topbar--detail panel-surface">
-        <div className="brand-plate">Mini-Market</div>
+        <div className="brand-plate">Свой собственный маркетплейс</div>
         <div>
           <p className="market-topbar__title">Карточка товара</p>
           <p className="market-topbar__subtitle">Описание и характеристики</p>
