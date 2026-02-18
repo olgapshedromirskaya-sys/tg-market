@@ -1,37 +1,24 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import Script from "next/script";
-import { TelegramMiniAppInit } from "@/components/telegram-mini-app-init";
-import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import type { Metadata } from 'next'
+import Script from 'next/script'
+import { TelegramMiniAppInit } from '@/components/telegram-mini-app-init'
+import './globals.css'
 
 export const metadata: Metadata = {
-  title: "Neon Market Mini App",
-  description: "Telegram Mini App для витрины товаров",
-};
+  title: 'Mini-Market | Telegram Mini App',
+  description: 'Интернет-магазин и витрина товаров для Telegram Mini App',
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="ru">
       <head>
-        <meta name="theme-color" content="#121424" />
+        <meta name="theme-color" content="#071432" />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className="antialiased">
         <Script
           src="https://telegram.org/js/telegram-web-app.js"
           strategy="beforeInteractive"
@@ -40,5 +27,5 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  );
+  )
 }
