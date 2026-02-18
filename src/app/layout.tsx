@@ -4,7 +4,7 @@ import { TelegramMiniAppInit } from '@/components/telegram-mini-app-init'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Mini-Market | Telegram Mini App',
+  title: 'Свой собственный маркетплейс | Telegram Mini App',
   description: 'Интернет-магазин и витрина товаров для Telegram Mini App',
 }
 

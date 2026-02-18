@@ -8,7 +8,7 @@ export default async function Home() {
   return (
     <main className="market-app">
       <header className="market-topbar panel-surface">
-        <div className="brand-plate">Mini-Market</div>
+        <div className="brand-plate">Свой собственный маркетплейс</div>
         <div>
           <p className="market-topbar__title">Маркетплейс в Telegram</p>
           <p className="market-topbar__subtitle">
@@ -18,7 +18,7 @@ export default async function Home() {
       </header>
 
       <section className="market-hero panel-surface">
-        <div className="hero-brand-plate">Mini-Market</div>
+        <div className="hero-brand-plate">Свой собственный маркетплейс</div>
         <h1 className="market-hero__title">Гарант помощи</h1>
         <p className="market-hero__text">
           Это удобное место, где продавцы и покупатели быстро находят нужные

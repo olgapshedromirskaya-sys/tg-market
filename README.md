@@ -1,4 +1,4 @@
-# Mini-Market Telegram Mini App
+# Свой собственный маркетплейс Telegram Mini App
 
 Готовый шаблон мини‑приложения интернет‑магазина/маркетплейса для Telegram:
 

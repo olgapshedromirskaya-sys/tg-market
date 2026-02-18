@@ -116,22 +116,25 @@ a {
     var(--gradient-border) border-box;
   color: var(--foreground);
   font-weight: 700;
-  white-space: nowrap;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.14;
   letter-spacing: 0.2px;
 }
 
 .brand-plate {
-  min-width: 108px;
-  padding: 7px 12px;
-  font-size: 14px;
+  max-width: 194px;
+  min-width: 124px;
+  padding: 6px 10px;
+  font-size: 13px;
 }
 
 .hero-brand-plate {
-  width: 180px;
+  width: min(268px, 100%);
   max-width: 100%;
   margin: 0 auto 12px;
   padding: 10px 12px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .market-topbar__title {
@@ -464,8 +467,8 @@ a {
   }
 
   .hero-brand-plate {
-    width: 162px;
-    font-size: 18px;
+    width: min(238px, 100%);
+    font-size: 16px;
   }
 
   .market-hero__title {
