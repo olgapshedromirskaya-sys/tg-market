@@ -7,30 +7,32 @@ export default async function Home() {
 
   return (
     <main className="market-app">
-      <header className="market-topbar">
-        <div className="market-topbar__logo">+</div>
+      <header className="market-topbar panel-surface">
+        <div className="brand-plate">Mini-Market</div>
         <div>
-          <p className="market-topbar__title">Neon Flow Market</p>
-          <p className="market-topbar__subtitle">Мини-приложение для Telegram</p>
+          <p className="market-topbar__title">Маркетплейс в Telegram</p>
+          <p className="market-topbar__subtitle">
+            Витрина товаров с быстрым переходом к карточке
+          </p>
         </div>
       </header>
 
-      <section className="market-hero">
-        <div className="market-hero__icon">+</div>
-        <h1 className="market-hero__title">Гарант покупок</h1>
+      <section className="market-hero panel-surface">
+        <div className="hero-brand-plate">Mini-Market</div>
+        <h1 className="market-hero__title">Гарант помощи</h1>
         <p className="market-hero__text">
-          Это удобное место, где клиенты быстро находят нужные товары и
-          переходят к подробной карточке.
+          Это удобное место, где продавцы и покупатели быстро находят нужные
+          товары.
         </p>
         <p className="market-hero__accent">
-          Быстрый выбор, безопасный переход и компактная витрина внутри Telegram
+          Каталог в формате мини-приложения с переходом к подробной карточке
         </p>
-        <a href="#catalog" className="market-hero__button">
+        <a href="#catalog" className="market-hero__button interactive-scale">
           Открыть каталог
         </a>
       </section>
 
-      {notice && <p className="market-notice">{notice}</p>}
+      {notice && <p className="market-notice panel-surface">{notice}</p>}
 
       <section id="catalog" className="catalog-section">
         <div className="catalog-header">
@@ -40,10 +42,10 @@ export default async function Home() {
 
         <div className="catalog-grid">
           {products.map((product) => (
-            <article className="product-card" key={product.id}>
+            <article className="product-card panel-surface" key={product.id}>
               <Link
                 href={`/product/${encodeURIComponent(product.id)}`}
-                className="product-card__image-link"
+                className="product-card__image-link interactive-scale"
               >
                 <img
                   src={product.image}
@@ -57,7 +59,7 @@ export default async function Home() {
 
               <Link
                 href={`/product/${encodeURIComponent(product.id)}`}
-                className="product-card__button"
+                className="product-card__button interactive-scale"
               >
                 Перейти к товару
               </Link>

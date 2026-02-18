@@ -20,20 +20,20 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
   return (
     <main className="market-app market-app--detail">
-      <header className="market-topbar market-topbar--detail">
-        <div className="market-topbar__logo">+</div>
+      <header className="market-topbar market-topbar--detail panel-surface">
+        <div className="brand-plate">Mini-Market</div>
         <div>
           <p className="market-topbar__title">Карточка товара</p>
-          <p className="market-topbar__subtitle">Детальная информация</p>
+          <p className="market-topbar__subtitle">Описание и характеристики</p>
         </div>
       </header>
 
-      <Link href="/" className="back-button">
-        Вернуться на главную
-        <span aria-hidden> ←</span>
+      <Link href="/" className="back-button interactive-scale">
+        <span aria-hidden>←</span>
+        <span>Вернуться на главную</span>
       </Link>
 
-      <article className="product-detail">
+      <article className="product-detail panel-surface">
         <img
           src={product.image}
           alt={product.title}
@@ -46,12 +46,12 @@ export default async function ProductPage({ params }: ProductPageProps) {
         </div>
       </article>
 
-      <section className="detail-block">
+      <section className="detail-block panel-surface">
         <h2>Описание</h2>
         <p>{product.description}</p>
       </section>
 
-      <section className="detail-block">
+      <section className="detail-block panel-surface">
         <h2>Краткие характеристики</h2>
         <ul className="detail-specs">
           {product.shortSpecs.length > 0 ? (
@@ -62,11 +62,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
         </ul>
       </section>
 
-      <section className="detail-block">
+      <section className="detail-block panel-surface">
         <h2>Ссылка на маркетплейс</h2>
         {product.marketplaceUrl ? (
           <a
-            className="marketplace-link"
+            className="marketplace-link interactive-scale"
             href={product.marketplaceUrl}
             target="_blank"
             rel="noreferrer"

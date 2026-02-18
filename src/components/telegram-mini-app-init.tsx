@@ -25,8 +25,8 @@ export function TelegramMiniAppInit() {
 
     webApp.ready()
     webApp.expand()
-    webApp.setBackgroundColor?.('#0f1018')
-    webApp.setHeaderColor?.('#121424')
+    webApp.setBackgroundColor?.('#040d24')
+    webApp.setHeaderColor?.('#071432')
   }, [])
 
   return null
